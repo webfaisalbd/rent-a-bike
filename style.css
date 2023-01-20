@@ -30,3 +30,82 @@ html::-webkit-scrollbar-thumb {
     border-radius: 5rem;
 }
 
+section {
+    padding: 50px 100px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eeeff1;
+    padding: 15px 100px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+/* use .navbar li -------> position relative;
+ because of , 
+ in the,  .navbar a::after, we use ------> position: absolute  */
+
+ .navbar li {
+    position: relative;
+ }
+
+ .navbar a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--gradient);
+    position: absolute;
+    left: 0px;
+    bottom: -4px;
+    transition: 0.5s;
+ }
+
+ .navbar a:hover::after {
+    width: 100%;
+ }
+
+ #menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none; 
+ }
+
+ .header-btn a {
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 500;
+ }
+
+ .header-btn .sign-in {
+    background: #474fa0;
+    color: #fff;
+    border-radius: 0.5rem;
+ }
+
+ .header-btn .sign-in:hover {
+    background: var(--main-color);
+ }
+
