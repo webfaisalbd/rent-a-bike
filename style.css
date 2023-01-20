@@ -238,3 +238,66 @@ header {
     background: var(--main-color);
     color: #fff;
 }
+
+
+/* Service Container */
+.services-container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 1rem;
+}
+
+.services-container .box {
+    padding: 10px;
+    border-radius: 1rem;
+    box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+}
+
+.services-container .box .box-img {
+    width: 280px;
+    height: 200px;
+}
+
+.services-container .box .box-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.services-container .box p {
+    font-size: 0.7rem;
+    border-radius: 1rem;
+    border: 0.1rem solid lightblue;
+    padding: 0.2rem 0.5rem;
+    display: inline-block;
+}
+
+.services-container .box h4 {
+    margin-top: 0.5rem;
+    color: rgb(184, 179, 179);
+}
+
+.services-container .box h5 {
+    margin: 0.5rem 0;
+    color: rgb(112, 110, 110);
+}
+
+.services-container .box .btn {
+    padding: 0.4rem 0.6rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #474fa0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+}
+
+.services-container .box .btn:hover {
+    background: var(--main-color);
+    color: #fff;
+}
