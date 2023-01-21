@@ -168,7 +168,6 @@ header {
 }
 
 .form-container form .input-box {
-    flex: 1 1 7rem;
     display: flex;
     flex-direction: column;
 }
@@ -441,4 +440,78 @@ header {
     padding: 5px;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+
+
+
+/* Make Responsive */
+@media (max-width: 991px){
+    header {
+        padding: 15px 30px;
+    }
+    section {
+        padding: 50px 40px;
+    }
+    /* .sign-up {
+        display: none;
+    } */
+    .form-container form {
+        position: unset;
+    }
+}
+
+@media (max-width:768px){
+    #menu-icon {
+        display: initial;
+    }
+    .text h1 {
+        margin-top: .5rem;
+        font-size: 1.5rem;
+    }
+    .app-stores {
+        margin-bottom: 10px;
+    }
+    .home {
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+    }
+    header .navbar {
+        position: absolute;
+        top: -500px;
+        left: 0;
+        right: 0;
+        background: #fff;
+
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        box-shadow: 1px 4px 41px rgba(0, 0, 0, 0.1);
+
+        transition: 0.2s ease;
+        text-align: left;
+    }
+
+    .navbar.active {
+        top: 100%;
+    }
+
+    .navbar a {
+        padding: 1rem;
+        margin: 1rem;
+        border-left: 2px solid var(--main-color);
+        display: block;
+    }
+    .navbar a::after {
+        display: none;
+    }
+    .navbar a:hover {
+        background: var(--main-color);
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+    
+
 }
