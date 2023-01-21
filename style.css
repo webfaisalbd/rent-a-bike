@@ -425,6 +425,10 @@ header {
     border-radius: 10px;
 }
 
+.newsLetter .newsLetter-container .form-div .btn:hover {
+    background: var(--main-color);
+}
+
 
 
 
