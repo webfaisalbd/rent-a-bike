@@ -117,7 +117,6 @@ header {
 .home {
     width: 100%;
     min-height: 100vh;
-    position: relative;
     background: #eeeff2;
 
     display: grid;
@@ -460,10 +459,6 @@ header {
     /* .sign-up {
         display: none;
     } */
-    .form-container form {
-        position: unset;
-    }
-
 
 }
 
