@@ -521,3 +521,11 @@ header {
     
 
 }
+
+@media (max-width: 360px){
+    .home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
