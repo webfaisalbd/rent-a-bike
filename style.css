@@ -246,7 +246,7 @@ header {
 .services-container {
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
     gap: 1rem;
 }
 
@@ -257,15 +257,17 @@ header {
 }
 
 .services-container .box .box-img {
-    width: 280px;
+    width: 240px;
     height: 200px;
+    margin: 0 auto;
+
 }
 
 .services-container .box .box-img img {
     width: 100%;
     height: 100%;
     border-radius: 1rem;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
@@ -401,8 +403,8 @@ header {
 
 .newsLetter .newsLetter-container .form-div {
     padding: 5px 7px;
-    /* border: 2px solid green; */
-    max-width: 300px;
+    border: none;
+    max-width: 260px;
     border-radius: 10px;
     background: #fff;
 }
@@ -412,20 +414,21 @@ header {
     border: none;
     background: #fff;
     padding: 5px 7px;
+    width: 100px;
 }
 
 .newsLetter .newsLetter-container .form-div {
     display: flex;
 }
 
-.newsLetter .newsLetter-container .form-div .btn {
+.newsLetter .newsLetter-container .form-div .subscribe-btn {
     background: var(--btn-color);
     color: #fff;
-    padding: 7px 12px;
+    padding: 2px 6px;
     border-radius: 10px;
 }
 
-.newsLetter .newsLetter-container .form-div .btn:hover {
+.newsLetter .newsLetter-container .form-div .subscribe-btn:hover {
     background: var(--main-color);
 }
 
@@ -457,6 +460,9 @@ header {
     section {
         padding: 50px 40px;
     }
+    .home {
+        background: #eeeff2;
+    }
     /* .sign-up {
         display: none;
     } */
@@ -468,10 +474,6 @@ header {
 @media (max-width:768px){
     #menu-icon {
         display: initial;
-    }
-    .text h1 {
-        margin-top: .5rem;
-        font-size: 1.5rem;
     }
     .app-stores {
         margin-bottom: 10px;
