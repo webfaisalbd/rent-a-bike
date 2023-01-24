@@ -118,7 +118,7 @@ header {
     width: 100%;
     min-height: 100vh;
     position: relative;
-    background: url(img/bike-website-2.png);
+    background: #eeeff2;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -159,10 +159,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
-    position: absolute;
-    left: 100px;
-    bottom: 2rem;
-    background: #fff;
+    background: white;
     padding: 20px;
     border-radius: 0.5rem;
 }
@@ -453,35 +450,39 @@ header {
 
 
 /* Make Responsive */
-@media (max-width: 991px){
+@media (max-width: 991px) {
     header {
         padding: 15px 30px;
     }
+
     section {
         padding: 50px 40px;
     }
-    .home {
-        background: #eeeff2;
-    }
+
     /* .sign-up {
         display: none;
     } */
     .form-container form {
         position: unset;
     }
+
+
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
     #menu-icon {
         display: initial;
     }
+
     .app-stores {
         margin-bottom: 10px;
     }
+
     .home {
         grid-template-columns: 1fr;
         margin-top: 1rem;
     }
+
     header .navbar {
         position: absolute;
         top: -500px;
@@ -508,9 +509,11 @@ header {
         border-left: 2px solid var(--main-color);
         display: block;
     }
+
     .navbar a::after {
         display: none;
     }
+
     .navbar a:hover {
         background: var(--main-color);
     }
@@ -518,14 +521,28 @@ header {
     .about-container {
         grid-template-columns: 1fr;
     }
-    
+
 
 }
 
-@media (max-width: 360px){
+@media (min-width: 1200px) {
     .home {
+        width: 100%;
+        background: url(/img/bike-website-2.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .form-container form {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
+        gap: 1rem;
+        position: absolute;
+        left: 100px;
+        bottom: 2rem;
+        padding: 20px;
+        border-radius: 0.5rem;
     }
 }
