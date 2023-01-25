@@ -9,6 +9,11 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    /* border: 2px solid blue; */
+}
+
+body {
+    max-width: 1200px;
 }
 
 :root {
@@ -125,10 +130,10 @@ header {
 }
 
 
-.text h1 {
+/* .text h1 {
     font-size: 3.5rem;
     letter-spacing: 2px;
-}
+} */
 
 .text span {
     color: var(--main-color);
@@ -198,9 +203,9 @@ header {
     text-align: center;
 }
 
-.heading h2 {
+/* .heading h2 {
     font-size: 2rem;
-}
+} */
 
 .ride-container {
     margin-top: 2rem;
